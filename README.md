@@ -1,7 +1,7 @@
 # MovieListApp - Project Details
 
-Angular Version - 14.2.1
-Component Library - Angular Material
+1. Angular Version - 14.2.1
+2. Component Library - Angular Material
 
 ## Project Structure
 ```.
@@ -19,13 +19,11 @@ Component Library - Angular Material
 |   +-- app.module
 ```
 ## Additional Libraries Used
-Angular Flex Layout - creating responsive grids
-Star Rating Module - Displaying rating system on cards
+1. Angular Flex Layout - creating responsive grids
+2. Star Rating Module - Displaying rating system on cards
 
 ## Usage Instructions
-The app contains 2 parts 
-A home landing page where it displays a list of movies, and
-Description page for each movie
+The app contains 2 parts, A home landing page where it displays a list of movies, and a Description page for each movie
 
 1. The landing page has 2 areas - a movie list area and a watched movies are
 2. Movies can be dragged and dropped into the watched movies area and vice-versa
