@@ -1,0 +1,17 @@
+<div class="movie-container" fxLayout="row" fxLayoutAlign="center">
+    <mat-card class="movie-card">
+        <mat-card-title><span><h3>Name:</h3></span> {{movie.title}}</mat-card-title>
+        <mat-card-subtitle>Dog Breed</mat-card-subtitle>
+        <img mat-card-image [src]="movie.largeImage" alt="Photo of a Shiba Inu">
+        <mat-card-content>
+          <h3>Description :</h3>
+          <p>{{movie.description}}</p>
+          <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</p>
+        </mat-card-content>
+        <mat-card-actions fxLayout="row" fxLayoutAlign="space-around">
+            <div><h3>Rating :</h3><star-rating [starType]="'svg'" [rating]="movie.rating"></star-rating></div>
+            <div><h3>Favorite :</h3><p>{{ movie.favorite === true ?  'Yes': 'No'}}</p></div>
+        </mat-card-actions>
+    </mat-card>
+    <div></div>
+</div>

@@ -1,0 +1,23 @@
+.drop-container {
+    padding: 15px;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 64px;
+    z-index: 500;  
+    background-color: white;
+
+    .drop-zone {
+        border-radius: 5px;
+        margin: 20px 0 20px 0;
+        border: 1px dashed rgba(255, 0, 0, .5);
+        height: fit-content;
+        min-height: 100px;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 479px) {
+    .drop-container {
+        top: 56px;
+    }    
+}

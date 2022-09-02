@@ -1,0 +1,25 @@
+<div class="container" fxLayout="column">
+    <div class="drop-container">
+        <div><button mat-flat-button color="primary">Watched Movies</button></div>
+        <div class="drop-zone" fxLayout="row wrap" fxLayoutGap="10" cdkDropList #watchList="cdkDropList"
+            [cdkDropListConnectedTo]="[movieList]" [cdkDropListData]="watchedMovies"
+            (cdkDropListDropped)="drop($event)">
+            <div *ngFor="let movie of watchedMovies" fxLayoutAlign.gt-lg="center center" cdkDrag fxLayoutAlign="space-around stretch">
+                <app-watched-card [title]="movie.title"></app-watched-card>
+            </div>
+        </div>
+        <div><button mat-flat-button color="primary">Movie List</button></div>
+    </div>
+
+    <div class="movie-zone" style="margin: 20px">
+        <div fxLayout="row wrap" fxLayoutGap="10" class="container" fxLayoutAlign="space-around stretch" cdkDropList
+            #movieList="cdkDropList" [cdkDropListConnectedTo]="[watchList]" [cdkDropListData]="allMovies"
+            (cdkDropListDropped)="drop($event)">
+            <div *ngFor="let movie of allMovies" fxLayoutAlign.gt-lg="center center"
+                fxLayoutAlign="space-around stretch" cdkDrag>
+                <app-mcard [title]="movie.title" [image]="movie.image" [rating]="movie.rating"
+                    [favorite]="movie.favorite" (click)="showDetails(movie.id)"></app-mcard>
+            </div>
+        </div>
+    </div>
+</div>
