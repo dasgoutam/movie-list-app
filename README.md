@@ -4,7 +4,7 @@ Angular Version - 14.2.1
 Component Library - Angular Material
 
 ## Project Structure
-.
+```.
 +-- app
 |   +-- components
 |       +-- Contains reusable components and ancillary components (Movie cards, headers)
@@ -17,7 +17,7 @@ Component Library - Angular Material
 |       +-- services
 |   +-- app.component
 |   +-- app.module
-
+```
 ## Additional Libraries Used
 Angular Flex Layout - creating responsive grids
 Star Rating Module - Displaying rating system on cards
